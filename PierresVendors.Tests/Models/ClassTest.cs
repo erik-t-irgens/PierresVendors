@@ -1,10 +1,10 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using ProjectName.Models;
 
-namespace ProjectName.Tests
+namespace PierresVendors.Tests
 {
     [TestClass]
-    public class ClassNameTest
+    public class VendorsTest
     {
         [TestMethod]
         public void MethodName_Spec_ExpectedOutput()

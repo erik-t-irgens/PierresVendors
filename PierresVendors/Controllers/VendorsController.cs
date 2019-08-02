@@ -1,10 +1,10 @@
 using Microsoft.AspNetCore.Mvc;
-using ProjectName.Models;
+using PierresVendors.Models;
 using System.Collections.Generic;
 
-namespace ProjectName.Controllers
+namespace PierresVendors.Controllers
 {
-    public class PluralClassNameController : Controller
+    public class VendorsController : Controller
     {
         // [HttpGet("/pluralClassName")]
         // public ActionResult Index()
