@@ -2,10 +2,16 @@
     Layout = "_Layout";
 }
 
-<h1>To Do List Order Details: </h1>
+<h1>Vendor's Order Details: </h1>
 
-<h2>@Model["order"].Description</h2>
-<h3>Vendor: @Model["vendor"].Name</h3>
-
-<a href='/vendors/@Model["vendor"].Id/orders/new'>Add another order</a>
-<a href='/vendors'>View all vendors</a>
+<div class="card">
+    <div class="card-header"><h3>Vendor: @Model["vendor"].Name</h3></div>
+    <div class="card-body"> <p>Title: @Model["order"].Name</p>
+    <p>Description: @Model["order"].Description</p>
+    <p>Price: @Model["order"].Price</p>
+    <p>Date of Order: @Model["order"].Date</p>
+    </div>
+   
+ </div>
+<a href='/vendors/@Model["vendor"].Id/orders/new'> <button class="button btn-outline-success">Add another order</button></a>
+<a href='/vendors'><button class="button btn-outline-success">View all vendors</button></a>

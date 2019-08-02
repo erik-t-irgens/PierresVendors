@@ -4,15 +4,15 @@
 
 @using PierresVendors.Models;
 
-<h3>Here are all  the itme sin this vendor:</h3>
+<h3>Here are all orders by this vendor:</h3>
 
 <ol>
     @foreach (Order order in @Model["orders"])
 {
-  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'>@order.Description</a></li>
+  <li><a href='/vendors/@Model["vendor"].Id/orders/@order.Id'><button class="button btn-outline-info vendorListed">@order.Name</button></a></li>
 }
 </ol>
 
-<p><a href='/vendors/@Model["vendor"].Id/orders/new'>Add a new order</a></p>
-<p><a href='/vendors'>Return to vendor list</a></p>
-<p><a href='/'>Return to Main Page</a></p>
+<a href='/vendors/@Model["vendor"].Id/orders/new' ><button class="button btn-outline-success">Add a new order</button></a>
+<a href='/vendors' ><button class="button btn-outline-success">Return to vendor list</button></a>
+<a href='/' ><button class="button btn-outline-success">Return to Main Page</button></a>

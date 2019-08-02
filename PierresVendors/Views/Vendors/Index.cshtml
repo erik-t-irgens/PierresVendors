@@ -13,8 +13,8 @@
 }
 @foreach (Vendor vendor in Model)
 {
-    <h3><a href='/vendors/@vendor.Id'> @vendor.Name</a></h3>
+    <h3><a href='/vendors/@vendor.Id'><button class="button btn-outline-warning"> @vendor.Name</button></a></h3>
 }
 
-<p><a href='/'>Back Home!</a></p>
+<p><a href='/'><button class="button btn-outline-success">Back Home!</button></a></p>
 
