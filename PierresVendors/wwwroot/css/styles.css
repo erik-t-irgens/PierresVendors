@@ -14,9 +14,13 @@ div#footer {
 
 body {
     text-align: center;
-
+    font-family: 'Patua One', cursive !important;
 }
 
 .align-center {
     text-align: center !important; 
+}
+
+.ordersListed {
+    text-align: left !important;
 }

@@ -11,7 +11,8 @@
     <p>Price: @Model["order"].Price</p>
     <p>Date of Order: @Model["order"].Date</p>
     </div>
-   
+    <div class='card-footer'>
+        <a href='/vendors/@Model["vendor"].Id/orders/new'  class='naviButton'> <button class="button btn-outline-success">Add New Order</button></a>
+        <a href='/vendors/@Model["vendor"].Id'  class='naviButton'><button class="button btn-outline-secondary">Back</button></a>
+    </div>
  </div>
-<a href='/vendors/@Model["vendor"].Id/orders/new'> <button class="button btn-outline-success">Add another order</button></a>
-<a href='/vendors'><button class="button btn-outline-success">View all vendors</button></a>

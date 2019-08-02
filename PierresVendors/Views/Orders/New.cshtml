@@ -1,20 +1,27 @@
 @{
     Layout = "_Layout";
 }
-    <h1>Add a new order to @Model.Name</h1>
-    <form action="/vendors/@Model.Id/orders" method="post">
-      <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
-      <label for="orderName">Item name: </label>
-      <input id="orderName" name="orderName" type="text">
-      <hr>
-      <label for="orderDescription">Order Description: </label>
-      <input id="orderDescription" name="orderDescription" type="text">
-      <hr>
-      <label for="orderPrice">Order Total: </label>
-      <input id="orderPrice" name="orderPrice" step=".01" min="0" type="number">
-      <hr>
-        <label for="orderDate">Date of Order: </label>
-      <input id="orderDate" name="orderDate" type="date">
-      <hr>
-      <button type="submit" class="button btn-lg btn-outline-primary">Add Order</button>
-    </form>
+
+<div class="card">
+    <div class="card-header">
+        <h1>Add a new order to @Model.Name</h1>
+    </div>
+    <div class='card-body'>
+        <form action="/vendors/@Model.Id/orders" method="post">
+        <input id="vendorId" name="vendorId" type="hidden" value="@Model.Id">
+        <label for="orderName">Item name: </label>
+        <input id="orderName" name="orderName" type="text">
+        <hr>
+        <label for="orderDescription">Order Description: </label>
+        <input id="orderDescription" name="orderDescription" type="text">
+        <hr>
+        <label for="orderPrice">Order Total: $</label>
+        <input id="orderPrice" name="orderPrice" step=".01" min="0" value="0.00"type="number">
+        <hr>
+            <label for="orderDate">Date of Order: </label>
+        <input id="orderDate" name="orderDate" type="date">
+        <hr>
+        <button type="submit" class="button btn-md btn-outline-primary">Add Order</button>
+        </form>
+     </div>
+</div>
