@@ -8,6 +8,15 @@ div#footer {
     padding:8px;
 }
 
-.vendorListed {
+.vendorsListed {
     color: black;
+}
+
+body {
+    text-align: center;
+
+}
+
+.align-center {
+    text-align: center !important; 
 }
